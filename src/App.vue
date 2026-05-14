@@ -224,7 +224,17 @@ const postsFiltrados = computed(() => {
   color: #000 !important;
   font-style: normal;
   margin-bottom: 40px;
+
+  }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem !important; /* Ajusta este número hasta que no se amontone */
+    line-height: 1.2;
+    text-align: center;
+  }
 }
+
 
 /* Navegación de Filtros */
 .filtros-container {
@@ -300,8 +310,10 @@ const postsFiltrados = computed(() => {
   letter-spacing: 0.5px;
   margin-top: 5px;
   margin-bottom: 15px;
-  text-transform: capitalize; 
+  text-transform: capitalize;
+
 }
+
 
 /* 1. Ajuste de la Tarjeta */
 .elegant-card {
