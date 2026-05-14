@@ -44,7 +44,7 @@ const articulos = ref([
   },
   { 
     id: 2, 
-    titulo: "Importancia Estratégica", 
+    titulo: "Funciones Críticas", 
     resumen: "¿Por qué la gestión de operaciones es el motor de la competitividad?",
     informacion: `Es fundamental abordar la gerencia de operaciones no solo como "mantenimiento", sino como una disciplina estratégica. En un centro de informática, las funciones de esta área aseguran que la tecnología se traduzca en resultados de negocio.
     
@@ -81,12 +81,12 @@ const articulos = ref([
     <strong>El error de configuración de Facebook (2021):</strong>
     En octubre de 2021, Facebook, Instagram y WhatsApp desaparecieron de internet por 6 horas debido a un error en la configuración de los protocolos de enrutamiento (BGP).
     Este caso explica la importancia del Monitoreo y Control de Cambios. Un pequeño ajuste manual en la infraestructura central puede desconectar a medio planeta si no existen procesos de validación y monitoreo de red en tiempo real.`,
-    categoria: "Estrategia",
+    categoria: "Gestión",
     imagen: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500"
   },
   { 
     id: 3, 
-    titulo: "Funciones Críticas", 
+    titulo: "Importancia Estratégica", 
     resumen: "Diseño de procesos, manejo de inventarios y control de calidad",
     informacion: `En la era digital, si los sistemas se detienen, la empresa deja de existir. La importancia de esta área radica en su capacidad para construir una infraestructura resiliente. No se trata solo de evitar caídas, sino de asegurar que, ante un incidente (un ciberataque, un desastre natural o un fallo de hardware), la organización pueda recuperarse en el menor tiempo posible, minimizando pérdidas económicas que podrían ser catastróficas.
 
@@ -105,7 +105,7 @@ const articulos = ref([
 
     <strong>Facilitadora de la Innovación (Agilidad Operativa)</strong>
     Para que un equipo de desarrollo pueda lanzar nuevas funciones (como una nueva herramienta en una app), necesita una base operativa sólida y flexible. Una buena gestión de operaciones permite que la empresa sea ágil; si la infraestructura está bien administrada, es fácil escalar y adoptar nuevas tecnologías como Inteligencia Artificial o Big Data sin que el sistema actual colapse.`,
-    categoria: "Gestión",
+    categoria: "Estratégica",
     imagen: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500"
   }
 ])
@@ -136,7 +136,7 @@ const postsFiltrados = computed(() => {
 
     <nav class="filtros-container">
       <button 
-        v-for="cat in ['Todos', 'Fundamentos', 'Estrategia', 'Gestión']" 
+        v-for="cat in ['Todos', 'Fundamentos', 'Gestión', 'Estratégica']" 
         :key="cat"
         @click="categoriaSeleccionada = cat"
         :class="{ active: categoriaSeleccionada === cat }"
@@ -226,7 +226,7 @@ const postsFiltrados = computed(() => {
   margin-bottom: 40px;
 
   }
-
+   
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem !important; /* Ajusta este número hasta que no se amontone */
