@@ -192,6 +192,11 @@ const postsFiltrados = computed(() => {
       </div>
     </div>
 
+  <footer class="footer">
+  <hr />
+  <p>© 2026 mi-blog. Todos los derechos reservados. Desarrollado por <strong>Oriana Ascanio</strong></p>
+</footer>
+
   </div> 
 </template>
 
@@ -440,5 +445,17 @@ const postsFiltrados = computed(() => {
   white-space: pre-line; 
   margin-bottom: 25px;
   padding-bottom: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #526386; 
+  color: #f1ebeb; 
+}
+.footer hr {
+  border: 0;
+  border-top: 1px solid #596378;
+  margin-bottom: 20px;
 }
 </style>
