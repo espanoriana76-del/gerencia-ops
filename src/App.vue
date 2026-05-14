@@ -449,6 +449,10 @@ const postsFiltrados = computed(() => {
   line-height: 1.7;
   color: #333;
   white-space: pre-line;
+  .modal-body div {
+  text-align: justify;
+  text-justify: inter-word;
+}
 }
 
 .full-info {
@@ -458,6 +462,9 @@ const postsFiltrados = computed(() => {
   white-space: pre-line; 
   margin-bottom: 25px;
   padding-bottom: 15px;
+  text-align: justify;
+  text-justify: inter-word; /* Mejora el espaciado entre palabras */
+  hyphens: auto;
 }
 
 .footer {
