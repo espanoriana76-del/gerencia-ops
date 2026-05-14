@@ -131,7 +131,7 @@ const postsFiltrados = computed(() => {
   <div class="app-innovative-container">
     
     <header class="main-header">
-      <h1>{{ nombreBlog }}</h1>
+      <h1>{{ nombreBlog }}</h1> 
     </header>
 
     <nav class="filtros-container">
@@ -430,6 +430,7 @@ const postsFiltrados = computed(() => {
   font-family: 'Playfair Display', serif !important;
   font-size: 2.5rem !important;
   margin: 15px 0;
+  color: #000000 !important;
 }
 
 .close-button {
